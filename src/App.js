@@ -6,12 +6,13 @@ import SimCreate from "./resources/sim/SimCreate";
 import SimList from "./resources/sim/SimList";
 import SimEdit from "./resources/sim/SimEdit";
 import SimShow from "./resources/sim/SimShow";
+import Dashboard from "./layout/dashboard/Dashboard";
 
 const title = attrs.title;
 const dataProvider = data;
 
 const App = () => (
-  <Admin title={title} dataProvider={dataProvider}>
+  <Admin dashboard={Dashboard} title={title} dataProvider={dataProvider}>
     <Resource
       name="sim"
       options={{ label: "SIM" }}
