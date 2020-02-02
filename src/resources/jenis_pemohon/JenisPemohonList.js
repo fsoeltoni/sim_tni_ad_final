@@ -8,7 +8,7 @@ import {
   DeleteButton
 } from "react-admin";
 
-const GolonganSimTniList = props => {
+const JenisPemohonList = props => {
   const sort = { field: "id", order: "ASC" };
 
   return (
@@ -23,4 +23,4 @@ const GolonganSimTniList = props => {
   );
 };
 
-export default GolonganSimTniList;
+export default JenisPemohonList;

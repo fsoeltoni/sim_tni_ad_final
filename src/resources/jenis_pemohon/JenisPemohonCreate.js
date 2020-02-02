@@ -1,23 +1,24 @@
 import React, { useState, useEffect } from "react";
-import { Edit, SimpleForm, TextInput } from "react-admin";
+import { Create, SimpleForm, TextInput, NumberInput } from "react-admin";
 import moment from "moment";
 
-const GolonganSimTniEdit = props => {
+const JenisPemohonCreate = props => {
   const [initialValues, setInitialValues] = useState();
 
   useEffect(() => {
-    const updated = moment();
+    const created = moment();
+    const updated = created;
 
-    setInitialValues({ updated });
+    setInitialValues({ created, updated });
   }, []);
 
   return (
-    <Edit {...props}>
+    <Create {...props}>
       <SimpleForm initialValues={initialValues}>
         <TextInput source="nama" label="Nama" />
       </SimpleForm>
-    </Edit>
+    </Create>
   );
 };
 
-export default GolonganSimTniEdit;
+export default JenisPemohonCreate;

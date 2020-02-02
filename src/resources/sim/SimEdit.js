@@ -30,6 +30,14 @@ const SimEdit = props => {
         >
           <SelectInput optionText="nama" />
         </ReferenceInput>
+        <ReferenceInput
+          source="jenis_pemohon_id"
+          reference="jenis_pemohon"
+          sort={{ field: "id", order: "ASC" }}
+          label="Jenis Pemohon"
+        >
+          <SelectInput optionText="nama" />
+        </ReferenceInput>
       </SimpleForm>
     </Edit>
   );

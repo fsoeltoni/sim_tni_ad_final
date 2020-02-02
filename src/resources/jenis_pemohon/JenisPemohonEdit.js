@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { Edit, SimpleForm, TextInput } from "react-admin";
+import { Edit, SimpleForm, TextInput, NumberInput } from "react-admin";
 import moment from "moment";
 
-const GolonganSimTniEdit = props => {
+const JenisPemohonEdit = props => {
   const [initialValues, setInitialValues] = useState();
 
   useEffect(() => {
@@ -20,4 +20,4 @@ const GolonganSimTniEdit = props => {
   );
 };
 
-export default GolonganSimTniEdit;
+export default JenisPemohonEdit;

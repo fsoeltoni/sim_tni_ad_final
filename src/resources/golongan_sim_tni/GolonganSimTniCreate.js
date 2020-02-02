@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Create, SimpleForm, TextInput, NumberInput } from "react-admin";
+import { Create, SimpleForm, TextInput } from "react-admin";
 import moment from "moment";
 
 const GolonganSimTniCreate = props => {

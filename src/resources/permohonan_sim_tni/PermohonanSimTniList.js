@@ -9,7 +9,7 @@ import {
 } from "react-admin";
 
 const PermohonanSimTniList = props => {
-  const sort = { field: "created", order: "DESC" };
+  const sort = { field: "id", order: "ASC" };
 
   return (
     <List {...props} sort={sort}>

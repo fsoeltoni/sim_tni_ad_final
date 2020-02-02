@@ -27,6 +27,13 @@ const SimShow = props => {
         >
           <TextField source="nama" />
         </ReferenceField>
+        <ReferenceField
+          source="jenis_pemohon_id"
+          reference="jenis_pemohon"
+          label="Jenis Pemohon"
+        >
+          <TextField source="nama" />
+        </ReferenceField>
       </SimpleShowLayout>
     </Show>
   );

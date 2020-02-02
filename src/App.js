@@ -15,6 +15,10 @@ import GolonganSimTniList from "./resources/golongan_sim_tni/GolonganSimTniList"
 import GolonganSimTniCreate from "./resources/golongan_sim_tni/GolonganSimTniCreate";
 import GolonganSimTniEdit from "./resources/golongan_sim_tni/GolonganSimTniEdit";
 import GolonganSimTniShow from "./resources/golongan_sim_tni/GolonganSimTniShow";
+import JenisPemohonList from "./resources/jenis_pemohon/JenisPemohonList";
+import JenisPemohonCreate from "./resources/jenis_pemohon/JenisPemohonCreate";
+import JenisPemohonEdit from "./resources/jenis_pemohon/JenisPemohonEdit";
+import JenisPemohonShow from "./resources/jenis_pemohon/JenisPemohonShow";
 
 const title = attrs.title;
 const dataProvider = data;
@@ -44,6 +48,14 @@ const App = () => (
       create={GolonganSimTniCreate}
       edit={GolonganSimTniEdit}
       show={GolonganSimTniShow}
+    />
+    <Resource
+      name="jenis_pemohon"
+      options={{ label: "Jenis Pemohon" }}
+      list={JenisPemohonList}
+      create={JenisPemohonCreate}
+      edit={JenisPemohonEdit}
+      show={JenisPemohonShow}
     />
   </Admin>
 );
