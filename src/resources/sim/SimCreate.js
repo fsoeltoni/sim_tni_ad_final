@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Create, SimpleForm } from "react-admin";
+import { Create, SimpleForm, ReferenceInput, SelectInput } from "react-admin";
 import moment from "moment";
 
 const SimCreate = props => {
@@ -15,7 +15,16 @@ const SimCreate = props => {
 
   return (
     <Create {...props}>
-      <SimpleForm initialValues={initialValues}></SimpleForm>
+      <SimpleForm initialValues={initialValues}>
+        <ReferenceInput
+          source="permohonan_sim_tni_id"
+          reference="permohonan_sim_tni"
+          sort={{ field: "id", order: "ASC" }}
+          label="Permohonan SIM-TNI"
+        >
+          <SelectInput optionText="nama" />
+        </ReferenceInput>
+      </SimpleForm>
     </Create>
   );
 };

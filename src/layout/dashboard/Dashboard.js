@@ -41,7 +41,7 @@ const Dashboard = () => {
 
   useEffect(() => {
     fetchSim();
-  }, []);
+  }, [fetchSim]);
 
   return null;
 };

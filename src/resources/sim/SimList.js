@@ -3,6 +3,8 @@ import {
   List,
   Datagrid,
   DateField,
+  ReferenceField,
+  TextField,
   EditButton,
   ShowButton,
   DeleteButton
@@ -16,6 +18,13 @@ const SimList = props => {
       <Datagrid>
         <DateField source="created" label="Pada Tanggal" />
         <DateField source="berlaku_hingga" label="Berlaku Hingga" />
+        <ReferenceField
+          source="permohonan_sim_tni_id"
+          reference="permohonan_sim_tni"
+          label="Permohonan SIM-TNI"
+        >
+          <TextField source="nama" />
+        </ReferenceField>
         <EditButton />
         <ShowButton />
         <DeleteButton />
