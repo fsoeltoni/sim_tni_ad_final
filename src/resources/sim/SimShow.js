@@ -20,6 +20,13 @@ const SimShow = props => {
         >
           <TextField source="nama" />
         </ReferenceField>
+        <ReferenceField
+          source="golongan_sim_tni_id"
+          reference="golongan_sim_tni"
+          label="Golongan SIM-TNI"
+        >
+          <TextField source="nama" />
+        </ReferenceField>
       </SimpleShowLayout>
     </Show>
   );

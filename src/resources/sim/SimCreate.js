@@ -24,6 +24,14 @@ const SimCreate = props => {
         >
           <SelectInput optionText="nama" />
         </ReferenceInput>
+        <ReferenceInput
+          source="golongan_sim_tni_id"
+          reference="golongan_sim_tni"
+          sort={{ field: "id", order: "ASC" }}
+          label="Golongan SIM-TNI"
+        >
+          <SelectInput optionText="nama" />
+        </ReferenceInput>
       </SimpleForm>
     </Create>
   );
